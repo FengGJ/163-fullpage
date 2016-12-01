@@ -1,5 +1,5 @@
 .loop (@i:1) when (@i<11) {
-  .for() when (@i=5), (@i=8) {
+  .for() when (@i=5), (@i=7),(@i=8) {
     .loo (@y:1) when (@y<5) {
       .bg@{i}@{y} {
         position: absolute;
@@ -11,7 +11,7 @@
     .loo;
 
   }
-  .for() when (@i=7) {
+  .for() when (@i=6) {
     .loo (@y:1) when (@y<3) {
       .bg@{i}@{y} {
         position: absolute;
@@ -24,7 +24,7 @@
     .loo;
 
   }
-  .for() when (@i<5), (@i>8), (@i=6) {
+  .for() when (@i<5), (@i>8) {
     .loo (@y:1) when (@y<4) {
       .bg@{i}@{y} {
         position: absolute;

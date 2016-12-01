@@ -88,11 +88,6 @@
   background: url("../images/bg62.png") no-repeat;
   transition: all 1s ease;
 }
-.bg63 {
-  position: absolute;
-  background: url("../images/bg63.png") no-repeat;
-  transition: all 1s ease;
-}
 .bg71 {
   position: absolute;
   background: url("../images/bg71.png") no-repeat;
@@ -101,6 +96,16 @@
 .bg72 {
   position: absolute;
   background: url("../images/bg72.png") no-repeat;
+  transition: all 1s ease;
+}
+.bg73 {
+  position: absolute;
+  background: url("../images/bg73.png") no-repeat;
+  transition: all 1s ease;
+}
+.bg74 {
+  position: absolute;
+  background: url("../images/bg74.png") no-repeat;
   transition: all 1s ease;
 }
 .bg81 {
