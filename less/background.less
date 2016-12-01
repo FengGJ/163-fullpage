@@ -1,0 +1,54 @@
+.loop (@i:1) when (@i<11) {
+  .for() when (@i=5), (@i=8) {
+    .loo (@y:1) when (@y<5) {
+      .bg@{i}@{y} {
+        position: absolute;
+        background: url("../images/bg@{i}@{y}.png") no-repeat;
+        transition: all 1s ease;
+      }
+      .loo(@y+1);
+    }
+    .loo;
+
+  }
+  .for() when (@i=7) {
+    .loo (@y:1) when (@y<3) {
+      .bg@{i}@{y} {
+        position: absolute;
+        background: url("../images/bg@{i}@{y}.png") no-repeat;
+        transition: all 1s ease;
+      }
+      .loo(@y+1);
+
+    }
+    .loo;
+
+  }
+  .for() when (@i<5), (@i>8), (@i=6) {
+    .loo (@y:1) when (@y<4) {
+      .bg@{i}@{y} {
+        position: absolute;
+        background: url("../images/bg@{i}@{y}.png") no-repeat;
+        transition: all 1s ease;
+      }
+
+      .loo(@y+1);
+    }
+    .loo;
+
+  }
+  .for;
+  .loop(@i+1);
+}
+.loop;
+
+
+/*字体图片*/
+.h3 (@i:2) when (@i<=9) {
+  .section@{i} .h3 {
+    background: url("../images/t@{i}.png");
+  }
+  .h3(@i+1);
+}
+
+.h3;

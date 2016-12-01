@@ -1,0 +1,391 @@
+body {
+    font: 16px/1.8 "Microsoft Yahei",verdana;
+}
+*{
+    margin:0;padding:0;
+}
+/*导航*/
+#fp-nav ul li .fp-tooltip {
+    color: #8F9DA4;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #8F9DA4;
+}
+
+.section .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+/*公共*/
+.bg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.section .h3 {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    z-index: 10;
+    width: 512px;
+    height: 45px;
+    margin-left: -256px;
+    margin-top: 60px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    transition: all 1s ease;
+}
+
+.active strong, .active .h3 {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    transition-delay: 0.7s;
+}
+
+strong{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    z-index: 10;
+    width: 512px;
+    height: 45px;
+    margin-left: -256px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #748A9E;
+    opacity: 0;
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    transition: all 1s ease;
+}
+
+/*第一屏*/
+
+.bg11 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 850px;
+    background: url(../images/bg11.png) no-repeat 50% 0;
+}
+
+.bg12 {
+    position: absolute;
+    bottom: -392px;
+    width: 100%;
+    height: 392px;
+    background: url(../images/bg12.png) no-repeat 50% 0;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.bg13 {
+    position: absolute;
+    bottom: -377px;
+    width: 100%;
+    height: 377px;
+    background: url(../images/bg13.png) no-repeat 50% 0;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.mail {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: -187px;
+    background: url("../images/logo.png") no-repeat;
+    width: 375px;
+    height: 26px;
+    text-indent: -9999px;
+    transition: all 1s ease;
+}
+
+.mail > a {
+    height: 26px;
+}
+
+.mail-163 {
+    float: left;
+    width: 107px;
+}
+
+.mail-126 {
+    float: left;
+    width: 108px;
+    margin-left: 23px;
+}
+
+.mail-yeah {
+    float: right;
+    width: 115px;
+}
+
+.middle {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -272px;
+    width: 554px;
+    height: 176px;
+    background: url("../images/slogan.png") no-repeat 0 0;
+    transform: scale(.3);
+    opacity: 0;
+    transition: all 1s ease;
+
+}
+
+.p11 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    margin: 0 0 0 -250px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #94a7c6;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.active .mail {
+    top: 26px;
+    transition-delay: 0.5s
+
+}
+
+.active .p11 {
+    opacity: 1;
+    transition-delay: 2s
+}
+
+.active .middle {
+    transform: scale(1);
+    opacity: 1;
+    transition-delay: 0.5s
+
+}
+
+.active .bg12 {
+    bottom: 10%;
+    opacity: 1;
+    transition-delay: 0.5s
+
+}
+
+.active .bg13 {
+    bottom: 0;
+    opacity: 1;
+    transition-delay: 0.5s
+}
+
+/*第二屏*/
+
+.bg21 {
+    width: 819px;
+    height: 250px;
+    background-position:0% 0;
+    bottom: 10%;left:50%;
+    margin-left: -1108px;
+    margin-bottom: 40px;
+    opacity:0;
+
+}
+.bg22 {
+    background-position:right 0;
+    bottom: 10%;left:50%;
+    width: 819px;
+    height: 299px;
+    margin-left: 320px;
+    margin-bottom: 70px;
+    opacity:0;
+
+}
+.bg23 {
+    width: 819px;
+    height: 325px;
+    background-position:0 0;
+    bottom: -45%;;left:50%;
+    margin-left:-409px;
+    opacity:0;
+}
+.p1{
+    position:absolute;
+    top:15%;
+    left:50%;
+    width: 510px;
+    margin-left: -255px;
+    margin-top: 130px;
+    font-size: 16px;
+    color: #727F8C;
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+.active .p1{
+    opacity: 1;
+    transition-delay:1.5s;
+}
+.active .bg21{
+    opacity:1;
+    transition-delay:.5s;
+    margin-left:-608px;
+}
+.active .bg22{
+    opacity:1;
+    transition-delay:.5s;
+    margin-left:-280px;
+
+}
+.active .bg23{
+    opacity:1;
+    transition-delay:.5s;
+    bottom: 10%;
+}
+/*第三屏*/
+
+.bg31{
+    left: 50%;
+    bottom: 0;
+    width: 892px;
+    height: 472px;
+    margin-left: -396px;
+    margin-bottom: 80px;
+    opacity: 0;
+}
+.bg32{
+    left: 50%;
+    bottom: 0;
+    width: 892px;
+    height: 472px;
+    margin-left: -396px;
+    opacity: 0;
+    background-position:470px bottom ;
+}
+.bg33{
+    left: 50%;
+    bottom: 0;
+    width: 441px;
+    height: 380px;
+    margin-left: 50%;
+    opacity: 0;
+}
+.p2{
+    position: absolute;
+    top:15%;
+    margin-top: 250px;
+    left:50%;
+    margin-left:-100%;
+    width: 430px;
+    font-size: 16px;
+    color: #FFFDE1;
+    transition: all 1s ease;
+    opacity: 0;
+}
+.active .p2{
+    transition-delay:.5s;
+    opacity:1;
+    margin-left: -480px;
+}
+.active .bg31{
+    transition-delay:.5s;
+    opacity:1;
+}
+.active .bg32{
+    transition-delay:.5s;
+    opacity:1;
+}
+.active .bg33{
+    transition-delay:.5s;
+    opacity:1;
+    margin-left: -120px;
+}
+
+
+/*第四屏*/
+
+.bg41{
+    bottom: -372px;
+    width: 100%;
+    height: 372px;
+    background-position:50% 0;
+}
+.bg42{
+    bottom: -449px;
+    width: 100%;
+    height: 449px;
+    background-position:50% 0;
+}
+.bg43{
+    bottom: -449px;
+    width: 100%;
+    height: 449px;
+    margin-bottom: -130px;
+    background-position:50% 0;
+}
+.active .bg41{
+    bottom:10%;
+    transition-delay:.5s;
+}
+.active .bg42{
+    bottom:10%;
+    transition-delay:1s;
+}
+.active .bg43{
+    bottom:10%;
+    transition-delay:.7s;
+}
+
+/*第五屏*/
+.bg51,.bg52,.bg53,.bg54{
+    z-index: 1;
+    width: 208px;
+    left: 50%;
+    bottom: 15%;
+    padding-top: 210px;
+    color: #fff;
+    opacity: 0;
+    background-position: 50% 0;
+}
+.bg51{    margin-left: -851px;}
+.bg52{    margin-left: -403px;}
+.bg53{    margin-left: 195px;}
+.bg54{    margin-left: 645px;}
+
+.active .bg51,.active .bg52,.active .bg53,.active .bg54{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.active .bg51{margin-left: -551px;}
+.active .bg52{margin-left: -253px;}
+.active .bg53{margin-left: 45px;}
+.active .bg54{margin-left: 345px;}
+
+.section5 h4 {
+    margin-bottom: 12px;
+    font-size: 23px;
+    font-weight: 500;
+}
+.section5 p {font-size: 14px;}
+
+
+/*第六屏*/
+.section6 .h3 {
+    width: 561px;
+    margin-left: -280px;
+}
+/*第七屏*/
+
+.section7 .h3 {
+    width: 561px;
+    margin-left: -280px;
+}
